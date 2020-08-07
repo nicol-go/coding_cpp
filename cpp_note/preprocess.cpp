@@ -8,29 +8,29 @@ using namespace std;
 
 void case1()
 {
-    #
-    #if __linux__
-    #   define HAS_LINUX    1
-    #endif
-    #
+#
+#if __linux__
+#   define HAS_LINUX    1
+#endif
+#
     cout << "linux is " << HAS_LINUX << endl;
 }
 
 void case2()
 {
-    #define CUBE(a) (a)*(a)*(a)
+#define CUBE(a) (a)*(a)*(a)
     cout << CUBE(10)<<endl;
     cout << CUBE(15)<<endl;
-    #undef CUBE
+#undef CUBE
 
-    #ifdef AUTH_PWD
-    #   undef AUTH_PWD
-    #endif
-    #define AUTH_PWD "xxx"
+#ifdef AUTH_PWD
+#   undef AUTH_PWD
+#endif
+#define AUTH_PWD "xxx"
 
     cout << AUTH_PWD << endl;
 
-    #define MAX_BUF_LEN 65535
+#define MAX_BUF_LEN 65535
 }
 
 // macro for convienient namespace
